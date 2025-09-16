@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gulzaar - Where Elegance Meets Standards</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: url('images/flower-bg.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #2E2E2E;
+    }
+
+    .overlay {
+      background: rgba(255, 255, 255, 0.9);
+      min-height: 100vh;
+    }
+
+    header {
+      text-align: center;
+      padding: 2rem 1rem 1rem 1rem;
+      background: linear-gradient(90deg, #F9D3E1, #ffffff, #F9D3E1);
+    }
+
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3.2rem;
+      color: #D6336C;
+      margin: 0;
+      letter-spacing: 2px;
+    }
+
+    header p {
+      font-style: italic;
+      color: #2E2E2E;
+      margin-top: 0.5rem;
+      font-size: 1.1rem;
+    }
+
+    /* Navbar */
+    nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1.5rem;
+      margin-top: 1rem;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: #D6336C;
+      font-weight: 600;
+      text-decoration: none;
+      font-size: 1rem;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #A11D4E;
+    }
+
+    nav .icons {
+      margin-left: 2rem;
+    }
+
+    nav .icons a {
+      margin: 0 8px;
+      font-size: 1.2rem;
+      color: #D6336C;
+    }
+
+    /* Story / Brand Description */
+    .story {
+      max-width: 850px;
+      margin: 2rem auto;
+      text-align: center;
+      background: #F9D3E1;
+      padding: 2rem;
+      border-radius: 20px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      font-size: 1.05rem;
+      line-height: 1.8;
+    }
+
+    /* Section Titles */
+    .section-title {
+      text-align: center;
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      color: #D6336C;
+      margin: 2rem 0 1rem;
+    }
+
+    /* Product Grid */
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+      gap: 2rem;
+      padding: 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .card {
+      background: #ffffff;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 10px 25px rgba(214,51,108,0.2);
+    }
+
+    .card img {
+      width: 100%;
+      height: 260px;
+      object-fit: cover;
+    }
+
+    .card h3 {
+      margin: 1rem 0 0.5rem;
+      font-family: 'Playfair Display', serif;
+      color: #D6336C;
+      font-size: 1.2rem;
+    }
+
+    .card p {
+      color: #C9A23F;
+      font-weight: 600;
+      font-size: 1rem;
+    }
+
+    .btn {
+      display: inline-block;
+      margin: 1rem 0 1.5rem;
+      padding: 0.7rem 1.3rem;
+      background: linear-gradient(135deg, #D6336C, #F77CA4);
+      color: white;
+      border: none;
+      border-radius: 25px;
+      font-weight: 600;
+      text-decoration: none;
+      cursor: pointer;
+      transition: background 0.3s, transform 0.2s;
+    }
+
+    .btn:hover {
+      background: linear-gradient(135deg, #B32A5B, #E55B85);
+      transform: scale(1.05);
+    }
+
+    /* Reviews */
+    .reviews {
+      max-width: 900px;
+      margin: 3rem auto;
+      padding: 2rem;
+      background: #fff;
+      border-radius: 20px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    }
+
+    .reviews h2 {
+      text-align: center;
+      color: #D6336C;
+      font-family: 'Playfair Display', serif;
+      margin-bottom: 1.5rem;
+    }
+
+    .review {
+      margin-bottom: 1.5rem;
+      border-left: 4px solid #D6336C;
+      padding-left: 1rem;
+      font-style: italic;
+      color: #444;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      margin-top: 2rem;
+      background: linear-gradient(90deg, #F9D3E1, #ffffff, #F9D3E1);
+      font-size: 1rem;
+      font-weight: 500;
+      color: #2E2E2E;
+      border-top: 2px solid #D6336C;
+    }
+
+    footer p {
+      margin: 0.3rem 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay">
+    <!-- Header -->
+    <header>
+      <h1>Gulzaar</h1>
+      <p>Where elegance meets standards</p>
+
+      <!-- Navigation -->
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">Products</a>
+        <a href="#">Contact</a>
+        <a href="#">Sign In</a>
+        <a href="#">Sign Up</a>
+        <div class="icons">
+          <a href="#"><i class="fas fa-shopping-cart"></i></a>
+          <a href="#"><i class="fas fa-user"></i></a>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Brand Story -->
+    <section class="story">
+      <p>
+        At <strong>Gulzaar</strong>, we craft more than just products — we create memories.  
+        From delicate <em>Nikkah accessories</em> to graceful <em>clothing collections</em> and thoughtful <em>birthday gifts</em>,  
+        every creation reflects timeless elegance and heartfelt charm.
+      </p>
+    </section>
+
+    <!-- Nikkah Accessories -->
+    <h2 class="section-title">Nikkah Accessories</h2>
+    <section class="products">
+      <div class="card"><img src="images/nikkah-pen.jpg"><h3>Nikkah Pen Plates</h3><p>2000 PKR</p><a href="#" class="btn">Add to Cart</a></div>
+      <div class="card"><img src="images/ring-box.jpg"><h3>Engagement Ring Box Plate</h3><p>2500 PKR</p><a href="#" class="btn">Add to Cart</a></div>
+      <div class="card"><img src="images/nikkah-plate.jpg"><h3>Nikkah Plates + Doodh Pilai Glass</h3><p>3000 PKR</p><a href="#" class="btn">Add to Cart</a></div>
+      <div class="card"><img src="images/nikkah-dupatta.jpg"><h3>Nikkah Dupatta</h3><p>3500 PKR</p><a href="#" class="btn">Add to Cart</a></div>
+    </section>
+
+    <!-- Clothing -->
+    <h2 class="section-title">Clothing Collection</h2>
+    <section class="products">
+      <div class="card"><img src="images/organza-dupatta.jpg"><h3>Embellished Organza Dupatta</h3><p>2500 PKR</p><a href="#" class="btn">Add to Cart</a></div>
+      <div class="card"><img src="images/3pc-stitched.jpg"><h3>3 Piece Stitched</h3><p>4500 PKR</p><a href="#" class="btn">Add to Cart</a></div>
+      <div class="card"><img src="images/2pc-stitched.jpg"><h3>2 Piece Stitched with Organza Dupatta</h3><p>3500 PKR</p><a href="#" class="btn">Add to Cart</a></div>
+      <div class="card"><img src="images/3pc-unstitched-organza.jpg"><h3>3 Piece Unstitched (Organza)</h3><p>4000 PKR</p><a href="#" class="btn">Add to Cart</a></div>
+      <div class="card"><img src="images/3pc-unstitched-chiffon.jpg"><h3>3 Piece Unstitched (Chiffon)</h3><p>3800 PKR</p><a href="#" class="btn">Add to Cart</a></div>
+    </section>
+
+    <!-- Birthday Gifts -->
+    <h2 class="section-title">Birthday Gifts</h2>
+    <section class="products">
+      <div class="card"><img src="images/gift-box.jpg"><h3>Gift Boxes</h3><p>2000 PKR</p><a href="#" class="btn">Add to Cart</a></div>
+    </section>
+
+    <!-- Customer Reviews -->
+    <section class="reviews">
+      <h2>Customer Reviews</h2>
+      <div class="review">“Absolutely loved my Nikkah plate set from Gulzaar — it made my day so special!” – Ayesha</div>
+      <div class="review">“Their stitched 3-piece is so elegant and comfortable, I got so many compliments!” – Hira</div>
+      <div class="review">“Beautiful gift box for my best friend’s birthday. Highly recommend Gulzaar.” – Sana</div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>Contact: 0318 4392646</p>
+      <p>© 2025 Gulzaar — Elegance in every detail.</p>
+    </footer>
+  </div>
+</body>
+</html>
